@@ -25,17 +25,17 @@ function operate(oper, a, b) {
   secondNum = b;
 
   if (operator === "+") {
-    add(a, b);
+    return add(a, b);
   }
   else if (operator === "-") {
-    subtract(a, b);
+    return subtract(a, b);
   }
   else if (operator === "*") {
-    multiply(a, b);
+    return multiply(a, b);
   }
   else if (operator === "/") {
-    divide(a, b);
+    return divide(a, b);
   }
 };
 
-console.log(operate("-", 15, 5))
+console.log(operate("+", 1, 2))
