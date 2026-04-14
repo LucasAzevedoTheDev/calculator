@@ -32,4 +32,7 @@ body {
   width: 95%;
   height: 70%;
   background-color: rgb(234, 203, 0);
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: 25% 25% 25% 25%;
 }
