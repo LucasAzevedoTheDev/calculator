@@ -4,6 +4,7 @@
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
+  background-color: rgb(73, 68, 68);
 }
 
 .calculator {
@@ -55,5 +56,3 @@ body {
 .buttons.operator.equal {
   background-color: rgb(255, 141, 2)
 }
-
-/* FINISH THE CSS BEFORE MERGE */
