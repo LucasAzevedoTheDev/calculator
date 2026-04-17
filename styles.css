@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Trirong", sans-serif;
   margin: 0;
   background-color: rgb(73, 68, 68);
 }
@@ -29,6 +29,7 @@ body {
   text-align: end;
   font-size: 45px;
   color: white;
+  font-weight: bold; 
 }
 
 .keyboard {
