@@ -40,4 +40,4 @@ function operate(oper, a, b) {
 
 let display = document.querySelector(".display")
 
-display.textContent = "123"
+display.textContent = "12345"
