@@ -31,10 +31,26 @@ body {
 .keyboard {
   width: 95%;
   height: 70%;
-  background-color: rgb(234, 203, 0);
+  /* background-color: rgb(234, 203, 0); */
   display: grid;
   grid-template-rows: 20% 20% 20% 20% 20%;
   grid-template-columns: 25% 25% 25% 25%;
+  gap: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8px;
 }
 
+.buttons {
+  border-radius: 45%;
+  border: none;
+}
+
+.buttons.operator {
+  background-color: rgb(224, 198, 148)
+}
+
+.buttons.operator.equal {
+  background-color: rgb(255, 141, 2)
+}
 /* FINISH THE CSS BEFORE MERGE */
