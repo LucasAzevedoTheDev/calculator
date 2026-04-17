@@ -47,6 +47,10 @@ body {
 .buttons {
   border-radius: 45%;
   border: none;
+  font-size: 20px;
+}
+.buttons.operator.divisor {
+  font-size: 25px;
 }
 
 .buttons.operator {
