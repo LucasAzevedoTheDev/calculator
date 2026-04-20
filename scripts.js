@@ -15,9 +15,9 @@ function divide(a, b) {
   return a / b;
 }
 
-let firstNum 
-let operator
-let secondNum
+let firstNum;
+let operator;
+let secondNum;
 
 function operate(oper, a, b) {
   operator = oper;
@@ -62,3 +62,4 @@ let plusButton = document.querySelector(".+");
 let button0 = document.querySelector(".0");
 let commaButton = document.querySelector(".,");
 let equalButton = document.querySelector(".equal");
+
