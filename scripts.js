@@ -45,21 +45,31 @@ display.textContent = "12345";
 // BUTTONS
 let delButton = document.querySelector(".del");
 let acButton = document.querySelector(".ac");
-let percentButton = document.querySelector(".%");
+let percentButton = document.querySelector(".percent");
 let divisorButton = document.querySelector(".divisor");
-let button7 = document.querySelector(".7");
-let button8 = document.querySelector(".8");
-let button9 = document.querySelector(".9");
-let multiplyButton = document.querySelector(".x");
-let button4 = document.querySelector(".4");
-let button5 = document.querySelector(".5");
-let button6 = document.querySelector(".6");
-let minusButton = document.querySelector(".-");
-let button1 = document.querySelector(".1");
-let button2 = document.querySelector(".2");
-let button3 = document.querySelector(".3");
-let plusButton = document.querySelector(".+");
-let button0 = document.querySelector(".0");
-let commaButton = document.querySelector(".,");
+let button7 = document.querySelector(".seven");
+let button8 = document.querySelector(".eight");
+let button9 = document.querySelector(".nine");
+let multiplyButton = document.querySelector(".multiply");
+let button4 = document.querySelector(".four");
+let button5 = document.querySelector(".five");
+let button6 = document.querySelector(".six");
+let minusButton = document.querySelector(".minus");
+let button1 = document.querySelector(".one");
+let button2 = document.querySelector(".two");
+let button3 = document.querySelector(".three");
+let plusButton = document.querySelector(".plus");
+let button0 = document.querySelector(".zero");
+let commaButton = document.querySelector(".comma");
 let equalButton = document.querySelector(".equal");
 
+// create a function
+function update() {
+  firstNum = 0;
+  secondNum = 0;
+
+}
+// the function should update one of the number variables
+// when the buttons are clicked
+
+// update the display to reflect the value of the variable
