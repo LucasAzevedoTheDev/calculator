@@ -64,11 +64,7 @@ let commaButton = document.querySelector(".comma");
 let equalButton = document.querySelector(".equal");
 
 // create a function
-function update() {
-  firstNum = 0;
-  secondNum = 0;
 
-}
 // the function should update one of the number variables
 // when the buttons are clicked
 
