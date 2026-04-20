@@ -63,6 +63,11 @@ let button0 = document.querySelector(".zero");
 let commaButton = document.querySelector(".comma");
 let equalButton = document.querySelector(".equal");
 
+
+// add the percent function to operation functions
+
+
+
 // create a function
 
 // the function should update one of the number variables
