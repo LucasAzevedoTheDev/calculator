@@ -41,3 +41,5 @@ function operate(oper, a, b) {
 let display = document.querySelector(".display")
 
 display.textContent = "12345"
+
+// BUTTONS
