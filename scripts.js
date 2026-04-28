@@ -167,9 +167,13 @@ acButton.addEventListener("click", () => {
 
 delButton.addEventListener("click", () => {
   const text = display.textContent;
-
-  display.textContent = text.slice(0, -1);
-})
+  if(text.length > 1) {
+    display.textContent = text.slice(0, -1);
+  }
+  else {
+    display.textContent = 0;
+  }
+});
 
 commaButton.addEventListener("click", () => {
   display.textContent += ",";
