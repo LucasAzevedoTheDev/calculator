@@ -164,8 +164,12 @@ acButton.addEventListener("click", () => {
   display.textContent = "0";
 });
 
+delButton.addEventListener("click", () => {
+  const text = display.textContent;
 
-// add DEL button event
+  display.textContent = text.slice(0, -1);
+})
+
 // add operators button event
 // add comma button event
 
