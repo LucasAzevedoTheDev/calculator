@@ -40,6 +40,9 @@ function operate(oper, a, b) {
   else if (operator === "/") {
     return divide(a, b);
   }
+  else if (operator === "%") {
+    return percent(a, b);
+  }
 };
 
 let display = document.querySelector(".display");
