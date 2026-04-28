@@ -70,6 +70,45 @@ let button0 = document.querySelector(".zero");
 let commaButton = document.querySelector(".comma");
 let equalButton = document.querySelector(".equal");
 
+button1.addEventListener("click", () => {
+  display.textContent += 1;
+});
+
+button2.addEventListener("click", () => {
+  display.textContent += 2;
+});
+
+button3.addEventListener("click", () => {
+  display.textContent += 3;
+});
+
+button4.addEventListener("click", () => {
+  display.textContent += 4;
+});
+
+button5.addEventListener("click", () => {
+  display.textContent += 5;
+});
+
+button6.addEventListener("click", () => {
+  display.textContent += 6;
+});
+
+button7.addEventListener("click", () => {
+  display.textContent += 7;
+});
+
+button8.addEventListener("click", () => {
+  display.textContent += 8;
+});
+
+button9.addEventListener("click", () => {
+  display.textContent += 9;
+});
+
+
+
+
 
 
 
