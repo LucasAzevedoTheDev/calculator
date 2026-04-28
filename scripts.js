@@ -15,6 +15,10 @@ function divide(a, b) {
   return a / b;
 }
 
+function percent(a, b) {
+  return (a * b) / 100;
+}
+
 let firstNum;
 let operator;
 let secondNum;
@@ -64,7 +68,6 @@ let commaButton = document.querySelector(".comma");
 let equalButton = document.querySelector(".equal");
 
 
-// add the percent function to operation functions
 
 
 
