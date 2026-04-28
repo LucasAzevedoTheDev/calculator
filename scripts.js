@@ -154,7 +154,7 @@ button9.addEventListener("click", () => {
 
 button0.addEventListener("click", () => {
   if(display.textContent === "0") {
-    // the display can't be "00"
+    // do nothing
   }
   else {
     display.textContent += 0;
@@ -167,6 +167,7 @@ acButton.addEventListener("click", () => {
 
 delButton.addEventListener("click", () => {
   const text = display.textContent;
+
   if(text.length > 1) {
     display.textContent = text.slice(0, -1);
   }
@@ -176,13 +177,18 @@ delButton.addEventListener("click", () => {
 });
 
 commaButton.addEventListener("click", () => {
-  display.textContent += ",";
-})
-// fix comma bug
+  const text = display.textContent;
+
+  if(text.includes(",")) {
+    // do nothing
+  }
+  else {
+    display.textContent += ",";
+  }
+});
 
 
 // add operators button event
-// add comma button event
 
 
 
