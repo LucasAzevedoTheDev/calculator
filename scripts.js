@@ -73,6 +73,10 @@ let equalButton = document.querySelector(".equal");
 
 
 
+// make buttons functional
+
+// add display logic
+
 
 // create a function
 
