@@ -170,6 +170,9 @@ delButton.addEventListener("click", () => {
   display.textContent = text.slice(0, -1);
 })
 
+commaButton.addEventListener("click", () => {
+  display.textContent += ",";
+})
 // add operators button event
 // add comma button event
 
