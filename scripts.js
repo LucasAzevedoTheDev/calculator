@@ -70,6 +70,7 @@ let button0 = document.querySelector(".zero");
 let commaButton = document.querySelector(".comma");
 let equalButton = document.querySelector(".equal");
 
+// BUTTON EVENTS
 button1.addEventListener("click", () => {
   if(display.textContent === "0") {
     display.textContent = 1;
@@ -173,6 +174,9 @@ delButton.addEventListener("click", () => {
 commaButton.addEventListener("click", () => {
   display.textContent += ",";
 })
+// fix comma bug
+
+
 // add operators button event
 // add comma button event
 
