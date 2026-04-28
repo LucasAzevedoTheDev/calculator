@@ -165,6 +165,11 @@ acButton.addEventListener("click", () => {
 });
 
 
+// add DEL button event
+// add operators button event
+// add comma button event
+
+
 
 
 
