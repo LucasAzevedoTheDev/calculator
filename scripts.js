@@ -151,9 +151,18 @@ button9.addEventListener("click", () => {
   }
 });
 
+button0.addEventListener("click", () => {
+  if(display.textContent === "0") {
+    // the display can't be "00"
+  }
+  else {
+    display.textContent += 0;
+  }
+});
+
 acButton.addEventListener("click", () => {
   display.textContent = "0";
-})
+});
 
 
 
