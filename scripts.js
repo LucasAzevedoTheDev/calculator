@@ -47,7 +47,7 @@ function operate(oper, a, b) {
 
 let display = document.querySelector(".display");
 
-display.textContent = "12345";
+display.textContent = "0";
 
 // BUTTONS
 let delButton = document.querySelector(".del");
@@ -71,42 +71,89 @@ let commaButton = document.querySelector(".comma");
 let equalButton = document.querySelector(".equal");
 
 button1.addEventListener("click", () => {
-  display.textContent += 1;
+  if(display.textContent === "0") {
+    display.textContent = 1;
+  }
+  else {
+    display.textContent += 1;
+  }
 });
 
 button2.addEventListener("click", () => {
-  display.textContent += 2;
+  if(display.textContent === "0") {
+    display.textContent = 2;
+  }
+  else {
+    display.textContent += 2;
+  }
 });
 
 button3.addEventListener("click", () => {
-  display.textContent += 3;
+  if(display.textContent === "0") {
+    display.textContent = 3;
+  }
+  else {
+    display.textContent += 3;
+  }
 });
 
 button4.addEventListener("click", () => {
-  display.textContent += 4;
+  if(display.textContent === "0") {
+    display.textContent = 4;
+  }
+  else {
+    display.textContent += 4;
+  }
 });
 
 button5.addEventListener("click", () => {
-  display.textContent += 5;
+  if(display.textContent === "0") {
+    display.textContent = 5;
+  }
+  else {
+    display.textContent += 5;
+  }
 });
 
 button6.addEventListener("click", () => {
-  display.textContent += 6;
+  if(display.textContent === "0") {
+    display.textContent = 6;
+  }
+  else {
+    display.textContent += 6;
+  }
 });
 
 button7.addEventListener("click", () => {
-  display.textContent += 7;
+  if(display.textContent === "0") {
+    display.textContent = 7;
+  }
+  else {
+    display.textContent += 7;
+  }
 });
 
 button8.addEventListener("click", () => {
-  display.textContent += 8;
+  if(display.textContent === "0") {
+    display.textContent = 8;
+  }
+  else {
+    display.textContent += 8;
+  }
 });
 
 button9.addEventListener("click", () => {
-  display.textContent += 9;
+  if(display.textContent === "0") {
+    display.textContent = 9;
+  }
+  else {
+    display.textContent += 9;
+  }
 });
 
-
+acButton.addEventListener("click", () => {
+  display.textContent = "0";
+})
 
 
 
