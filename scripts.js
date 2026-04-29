@@ -187,11 +187,60 @@ commaButton.addEventListener("click", () => {
   }
 });
 
+percentButton.addEventListener("click", () => {
+  const text = display.textContent;
 
-// add operators button event
+  if(text.includes("%")) {
+    // do nothing
+  }
+  else {
+    display.textContent += "%";
+  }
+});
 
+divisorButton.addEventListener("click", () => {
+  const text = display.textContent;
 
+  if(text.includes("÷")) {
+    // do nothing
+  }
+  else {
+    display.textContent += "÷";
+  }
+});
 
+multiplyButton.addEventListener("click", () => {
+  const text = display.textContent;
+
+  if(text.includes("x")) {
+    // do nothing
+  }
+  else {
+    display.textContent += "x";
+  }
+});
+
+minusButton.addEventListener("click", () => {
+  const text = display.textContent;
+
+  if(text.includes("-")) {
+    // do nothing
+  }
+  else {
+    display.textContent += "-";
+  }
+});
+
+plusButton.addEventListener("click", () => {
+  const text = display.textContent;
+
+  if(text.includes("+")) {
+    // do nothing
+  }
+  else {
+    display.textContent += "+";
+  }
+});
 
 
 // make buttons functional
