@@ -160,3 +160,23 @@ function update(btn) {
     }
   }
 };
+
+delButton.addEventListener("click", () => update(delButton));
+acButton.addEventListener("click", () => update(acButton));
+percentButton.addEventListener("click", () => update(percentButton));
+divisorButton.addEventListener("click", () => update(divisorButton));
+button7.addEventListener("click", () => update(button7));
+button8.addEventListener("click", () => update(button8));
+button9.addEventListener("click", () => update(button9));
+multiplyButton.addEventListener("click", () => update(multiplyButton));
+button4.addEventListener("click", () => update(button4));
+button5.addEventListener("click", () => update(button5));
+button6.addEventListener("click", () => update(button6));
+minusButton.addEventListener("click", () => update(minusButton));
+button1.addEventListener("click", () => update(button1));
+button2.addEventListener("click", () => update(button2));
+button3.addEventListener("click", () => update(button3));
+plusButton.addEventListener("click", () => update(plusButton));
+button0.addEventListener("click", () => update(button0));
+commaButton.addEventListener("click", () => update(commaButton));
+// make equal button logic
