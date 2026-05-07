@@ -190,7 +190,8 @@ commaButton.addEventListener("click", () => {
 percentButton.addEventListener("click", () => {
   const text = display.textContent;
 
-  if(text.includes("%")) {
+  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+  text.includes("-") || text.includes("+")) {
     // do nothing
   }
   else {
@@ -201,7 +202,8 @@ percentButton.addEventListener("click", () => {
 divisorButton.addEventListener("click", () => {
   const text = display.textContent;
 
-  if(text.includes("÷")) {
+  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+  text.includes("-") || text.includes("+")) {
     // do nothing
   }
   else {
@@ -212,7 +214,8 @@ divisorButton.addEventListener("click", () => {
 multiplyButton.addEventListener("click", () => {
   const text = display.textContent;
 
-  if(text.includes("x")) {
+  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+  text.includes("-") || text.includes("+")) {
     // do nothing
   }
   else {
@@ -223,7 +226,8 @@ multiplyButton.addEventListener("click", () => {
 minusButton.addEventListener("click", () => {
   const text = display.textContent;
 
-  if(text.includes("-")) {
+  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+  text.includes("-") || text.includes("+")) {
     // do nothing
   }
   else {
@@ -234,7 +238,8 @@ minusButton.addEventListener("click", () => {
 plusButton.addEventListener("click", () => {
   const text = display.textContent;
 
-  if(text.includes("+")) {
+  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+  text.includes("-") || text.includes("+")) {
     // do nothing
   }
   else {
@@ -245,7 +250,6 @@ plusButton.addEventListener("click", () => {
 
 // make buttons functional
 
-// add display logic
 
 
 // create a function
