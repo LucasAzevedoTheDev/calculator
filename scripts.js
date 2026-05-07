@@ -250,12 +250,21 @@ plusButton.addEventListener("click", () => {
 
 
 
-// function update(button) {
-//   const text = display.textContent;
+function update(btn) {
+  const text = display.textContent;
 
-//   if(button.class);
+  if(btn.classList.contains("number")) {
 
-// }
+    if(display.textContent === "0") {
+      display.textContent = btn.textContent;
+    }
+    else {
+      display.textContent += btn.textContent;
+    }
+  }
+  
+
+};
 // the function should update one of the number variables
 // when the buttons are clicked
 
