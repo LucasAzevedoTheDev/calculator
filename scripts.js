@@ -179,4 +179,6 @@ button3.addEventListener("click", () => update(button3));
 plusButton.addEventListener("click", () => update(plusButton));
 button0.addEventListener("click", () => update(button0));
 commaButton.addEventListener("click", () => update(commaButton));
+
 // make equal button logic
+// fix comma bug
