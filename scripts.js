@@ -82,6 +82,20 @@ function update(btn) {
     else {
       display.textContent += btn.textContent;
     }
+
+    // update variables
+    if(operator === undefined && firstNum === undefined) {
+      firstNum = btn.textContent;
+    }
+    else if(operator === undefined && firstNum.length >= 1) {
+      firstNum += btn.textContent;
+    }
+    else if(secondNum === undefined){
+      secondNum = btn.textContent;
+    }
+    else if(secondNum.length >= 1) {
+      secondNum += btn.textContent;
+    }
   }
 
   // OPERATOR PRESSED
@@ -132,6 +146,11 @@ function update(btn) {
         display.textContent += btn.textContent;
       }
     }  
+
+    // update variable
+    if(operator === undefined) {
+      operator = btn.textContent;
+    }
   }
 
   // CLEAR PRESSED
@@ -182,3 +201,4 @@ commaButton.addEventListener("click", () => update(commaButton));
 
 // make equal button logic
 // fix comma bug
+
