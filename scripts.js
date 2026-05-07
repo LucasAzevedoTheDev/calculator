@@ -248,12 +248,14 @@ plusButton.addEventListener("click", () => {
 });
 
 
-// make buttons functional
 
 
+// function update(button) {
+//   const text = display.textContent;
 
-// create a function
+//   if(button.class);
 
+// }
 // the function should update one of the number variables
 // when the buttons are clicked
 
