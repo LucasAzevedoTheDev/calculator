@@ -83,7 +83,7 @@ function update(btn) {
       display.textContent += btn.textContent;
     }
 
-    // update variables
+    // update firstNum and secondNum variables
     if(operator === undefined && firstNum === undefined) {
       firstNum = btn.textContent;
     }
@@ -147,7 +147,7 @@ function update(btn) {
       }
     }  
 
-    // update variable
+    // update operator variable
     if(operator === undefined) {
       operator = btn.textContent;
     }
@@ -178,6 +178,13 @@ function update(btn) {
       display.textContent += btn.textContent;
     }
   }
+
+  // EQUAL
+  if(btn.classList.contains("equal")) {
+
+    let result = operate(operator, firstNum, secondNum);
+    display.textContent = result;
+  }
 };
 
 delButton.addEventListener("click", () => update(delButton));
@@ -198,7 +205,13 @@ button3.addEventListener("click", () => update(button3));
 plusButton.addEventListener("click", () => update(plusButton));
 button0.addEventListener("click", () => update(button0));
 commaButton.addEventListener("click", () => update(commaButton));
+equalButton.addEventListener("click", () => update(equalButton));
 
-// make equal button logic
+//  the variables don't reset after the equal button pressed
+// continuous operations can't be done
+// update the variable update system
+
+
+
 // fix comma bug
 
