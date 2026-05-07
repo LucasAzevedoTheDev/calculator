@@ -70,189 +70,10 @@ let button0 = document.querySelector(".zero");
 let commaButton = document.querySelector(".comma");
 let equalButton = document.querySelector(".equal");
 
-// BUTTON EVENTS
-button1.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    display.textContent = 1;
-  }
-  else {
-    display.textContent += 1;
-  }
-});
-
-button2.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    display.textContent = 2;
-  }
-  else {
-    display.textContent += 2;
-  }
-});
-
-button3.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    display.textContent = 3;
-  }
-  else {
-    display.textContent += 3;
-  }
-});
-
-button4.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    display.textContent = 4;
-  }
-  else {
-    display.textContent += 4;
-  }
-});
-
-button5.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    display.textContent = 5;
-  }
-  else {
-    display.textContent += 5;
-  }
-});
-
-button6.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    display.textContent = 6;
-  }
-  else {
-    display.textContent += 6;
-  }
-});
-
-button7.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    display.textContent = 7;
-  }
-  else {
-    display.textContent += 7;
-  }
-});
-
-button8.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    display.textContent = 8;
-  }
-  else {
-    display.textContent += 8;
-  }
-});
-
-button9.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    display.textContent = 9;
-  }
-  else {
-    display.textContent += 9;
-  }
-});
-
-button0.addEventListener("click", () => {
-  if(display.textContent === "0") {
-    // do nothing
-  }
-  else {
-    display.textContent += 0;
-  }
-});
-
-acButton.addEventListener("click", () => {
-  display.textContent = "0";
-});
-
-delButton.addEventListener("click", () => {
-  const text = display.textContent;
-
-  if(text.length > 1) {
-    display.textContent = text.slice(0, -1);
-  }
-  else {
-    display.textContent = 0;
-  }
-});
-
-commaButton.addEventListener("click", () => {
-  const text = display.textContent;
-
-  if(text.includes(",")) {
-    // do nothing
-  }
-  else {
-    display.textContent += ",";
-  }
-});
-
-percentButton.addEventListener("click", () => {
-  const text = display.textContent;
-
-  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-  text.includes("-") || text.includes("+")) {
-    // do nothing
-  }
-  else {
-    display.textContent += "%";
-  }
-});
-
-divisorButton.addEventListener("click", () => {
-  const text = display.textContent;
-
-  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-  text.includes("-") || text.includes("+")) {
-    // do nothing
-  }
-  else {
-    display.textContent += "÷";
-  }
-});
-
-multiplyButton.addEventListener("click", () => {
-  const text = display.textContent;
-
-  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-  text.includes("-") || text.includes("+")) {
-    // do nothing
-  }
-  else {
-    display.textContent += "x";
-  }
-});
-
-minusButton.addEventListener("click", () => {
-  const text = display.textContent;
-
-  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-  text.includes("-") || text.includes("+")) {
-    // do nothing
-  }
-  else {
-    display.textContent += "-";
-  }
-});
-
-plusButton.addEventListener("click", () => {
-  const text = display.textContent;
-
-  if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-  text.includes("-") || text.includes("+")) {
-    // do nothing
-  }
-  else {
-    display.textContent += "+";
-  }
-});
-
-
-
-
 function update(btn) {
   const text = display.textContent;
 
+  // NUMBER PRESSED
   if(btn.classList.contains("number")) {
 
     if(display.textContent === "0") {
@@ -262,10 +83,80 @@ function update(btn) {
       display.textContent += btn.textContent;
     }
   }
-  
 
+  // OPERATOR PRESSED
+  if(btn.classList.contains("operator")) {
+
+    if(btn.classList.contains("percent")) {
+      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+        text.includes("-") || text.includes("+")) {
+        // do nothing
+      }
+      else {
+        display.textContent += btn.textContent;
+      }      
+    }
+    else if(btn.classList.contains("divisor")) {
+      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+        text.includes("-") || text.includes("+")) {
+        // do nothing
+      }
+      else {
+        display.textContent += btn.textContent;
+      }
+    }
+    else if(btn.classList.contains("multiply")) {
+      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+        text.includes("-") || text.includes("+")) {
+        // do nothing
+      }
+      else {
+        display.textContent += btn.textContent;
+      }
+    }
+    else if(btn.classList.contains("minus")) {
+      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+        text.includes("-") || text.includes("+")) {
+        // do nothing
+      }
+      else {
+        display.textContent += btn.textContent;
+      }
+    }
+    else if(btn.classList.contains("plus")) {
+      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
+        text.includes("-") || text.includes("+")) {
+        // do nothing
+      }
+      else {
+        display.textContent += btn.textContent;
+      }
+    }  
+  }
+
+  // CLEAR PRESSED
+  if(btn.classList.contains("clear")) {
+
+    if(btn.classList.contains("ac")) {
+      display.textContent = "0";
+    }
+    else if(btn.classList.contains("del")) {
+      if(text.length > 1) {
+        display.textContent = text.slice(0, -1);
+      }
+      else {
+        display.textContent = 0;
+      }
+    }
+  }
+
+  // COMMA
+  if(btn.classList.contains("comma")) {
+    if(text.includes(",")) {
+      // do nothing
+    }
+    else {
+      display.textContent += btn.textContent;
+    }
+  }
 };
-// the function should update one of the number variables
-// when the buttons are clicked
-
-// update the display to reflect the value of the variable
