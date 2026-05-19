@@ -214,3 +214,4 @@ pointButton.addEventListener("click", () => update(pointButton));
 equalButton.addEventListener("click", () => update(equalButton));
 
 // improve a display limit
+// make the readme
