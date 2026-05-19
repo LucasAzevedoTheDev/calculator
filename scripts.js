@@ -104,42 +104,27 @@ function update(btn) {
   if(btn.classList.contains("operator")) {
 
     if(btn.classList.contains("percent")) {
-      if(hasOperator) {
-        // do nothing
-      }
-      else {
+      if(!hasOperator) {
         display.textContent += btn.textContent;
-      }      
+      }   
     }
     else if(btn.classList.contains("divisor")) {
-      if(hasOperator) {
-        // do nothing
-      }
-      else {
+      if(!hasOperator) {
         display.textContent += btn.textContent;
       }
     }
     else if(btn.classList.contains("multiply")) {
-      if(hasOperator) {
-        // do nothing
-      }
-      else {
+      if(!hasOperator) {
         display.textContent += btn.textContent;
       }
     }
     else if(btn.classList.contains("minus")) {
-      if(hasOperator) {
-        // do nothing
-      }
-      else {
+      if(!hasOperator) {
         display.textContent += btn.textContent;
       }
     }
     else if(btn.classList.contains("plus")) {
-      if(hasOperator) {
-        // do nothing
-      }
-      else {
+      if(!hasOperator) {
         display.textContent += btn.textContent;
       }
     }  
