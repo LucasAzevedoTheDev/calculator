@@ -174,8 +174,11 @@ function update(btn) {
         display.textContent = 0;
       }
 
-      if(display.textContent.some("+", "-", "x", "%", "÷")) {
+      if(hasOperator) {
+        const parts = display.textContent.split(/[+\-x%÷]/);
 
+        firstNum = parts[0];
+        secondNum = parts[1] || undefined;
       }
     }
   }
