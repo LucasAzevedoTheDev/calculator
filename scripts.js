@@ -73,8 +73,6 @@ let equalButton = document.querySelector(".equal");
 function update(btn) {
   const text = display.textContent;
   const operators = ["-", "+", "x", "%", "÷"];
-  const hasOperator = operators.some(item => 
-    display.textContent.includes(item));
     
   // NUMBER PRESSED
   if(btn.classList.contains("number")) {
@@ -174,11 +172,18 @@ function update(btn) {
         display.textContent = 0;
       }
 
+      const hasOperator = operators.some(item => display.textContent.includes(item));
+
       if(hasOperator) {
         const parts = display.textContent.split(/[+\-x%÷]/);
 
         firstNum = parts[0];
         secondNum = parts[1] || undefined;
+      }
+      else {
+        firstNum = display.textContent;
+        operator = undefined;
+        secondNum = undefined;
       }
     }
   }
