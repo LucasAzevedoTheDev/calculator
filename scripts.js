@@ -37,7 +37,7 @@ function operate(oper, a, b) {
   else if (operator === "x") {
     return multiply(a, b);
   }
-  else if (operator === "/") {
+  else if (operator === "÷") {
     return divide(a, b);
   }
   else if (operator === "%") {
@@ -67,7 +67,7 @@ let button2 = document.querySelector(".two");
 let button3 = document.querySelector(".three");
 let plusButton = document.querySelector(".plus");
 let button0 = document.querySelector(".zero");
-let commaButton = document.querySelector(".comma");
+let pointButton = document.querySelector(".point");
 let equalButton = document.querySelector(".equal");
 
 function update(btn) {
@@ -167,12 +167,12 @@ function update(btn) {
     }
   }
 
-  // COMMA
-  if(btn.classList.contains("comma")) {
-    if(!firstNum.includes(",")) {
+  // POINT
+  if(btn.classList.contains("point")) {
+    if(!firstNum.includes(".")) {
       display.textContent += btn.textContent;
     }
-    else if(firstNum.includes(",") && !secondNum.includes(",")) {
+    else if(firstNum.includes(".") && !secondNum.includes(".")) {
       display.textContent += btn.textContent;
     }
   }
@@ -208,7 +208,7 @@ button2.addEventListener("click", () => update(button2));
 button3.addEventListener("click", () => update(button3));
 plusButton.addEventListener("click", () => update(plusButton));
 button0.addEventListener("click", () => update(button0));
-commaButton.addEventListener("click", () => update(commaButton));
+pointButton.addEventListener("click", () => update(pointButton));
 equalButton.addEventListener("click", () => update(equalButton));
 
 // improve a display limit
