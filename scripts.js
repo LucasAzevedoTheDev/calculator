@@ -229,4 +229,4 @@ button0.addEventListener("click", () => update(button0));
 pointButton.addEventListener("click", () => update(pointButton));
 equalButton.addEventListener("click", () => update(equalButton));
 
-// make the readme
+// add keyboard support
