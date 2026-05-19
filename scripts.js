@@ -185,9 +185,12 @@ function update(btn) {
   
   // EQUAL
   if(btn.classList.contains("equal")) {
-
     let result = operate(operator, firstNum, secondNum);
     display.textContent = result;
+
+    firstNum = result;
+    secondNum = undefined;
+    operator = undefined;
   }
 };
 
@@ -214,5 +217,3 @@ equalButton.addEventListener("click", () => update(equalButton));
 //  the variables don't reset after the equal button pressed
 // continuous operations can't be done
 // improve a display limit
-
-
