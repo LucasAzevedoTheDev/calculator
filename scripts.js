@@ -196,11 +196,14 @@ function update(btn) {
   // EQUAL
   if(btn.classList.contains("equal")) {
     let result = operate(operator, Number(firstNum), Number(secondNum));
-    display.textContent = result;
+    
+    if(!isNaN(result)) {
+      display.textContent = result;
 
-    firstNum = result;
-    secondNum = undefined;
-    operator = undefined;
+      firstNum = result;
+      secondNum = undefined;
+      operator = undefined;
+    }
   }
 };
 
