@@ -185,7 +185,7 @@ function update(btn) {
   
   // EQUAL
   if(btn.classList.contains("equal")) {
-    let result = operate(operator, firstNum, secondNum);
+    let result = operate(operator, Number(firstNum), Number(secondNum));
     display.textContent = result;
 
     firstNum = result;
@@ -214,6 +214,4 @@ button0.addEventListener("click", () => update(button0));
 commaButton.addEventListener("click", () => update(commaButton));
 equalButton.addEventListener("click", () => update(equalButton));
 
-//  the variables don't reset after the equal button pressed
-// continuous operations can't be done
 // improve a display limit
