@@ -34,7 +34,7 @@ function operate(oper, a, b) {
   else if (operator === "-") {
     return subtract(a, b);
   }
-  else if (operator === "*") {
+  else if (operator === "x") {
     return multiply(a, b);
   }
   else if (operator === "/") {
@@ -158,9 +158,10 @@ function update(btn) {
 
     if(btn.classList.contains("ac")) {
       display.textContent = "0";
-      operator = "";
-      firstNum = "";
-      secondNum = "";
+      
+      operator = undefined;
+      firstNum = undefined;
+      secondNum = undefined;
     }
     else if(btn.classList.contains("del")) {
       if(text.length > 1) {
@@ -174,14 +175,14 @@ function update(btn) {
 
   // COMMA
   if(btn.classList.contains("comma")) {
-    if(text.includes(",")) {
-      // do nothing
+    if(!firstNum.includes(",")) {
+      display.textContent += btn.textContent;
     }
-    else {
+    else if(firstNum.includes(",") && !secondNum.includes(",")) {
       display.textContent += btn.textContent;
     }
   }
-
+  
   // EQUAL
   if(btn.classList.contains("equal")) {
 
@@ -212,9 +213,6 @@ equalButton.addEventListener("click", () => update(equalButton));
 
 //  the variables don't reset after the equal button pressed
 // continuous operations can't be done
-// improve a display
+// improve a display limit
 
-
-
-// fix comma bug
 
