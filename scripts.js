@@ -209,7 +209,7 @@ equalButton.addEventListener("click", () => update(equalButton));
 
 //  the variables don't reset after the equal button pressed
 // continuous operations can't be done
-// update the variable update system
+// improve a display limit
 
 
 
