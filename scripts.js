@@ -171,9 +171,11 @@ function update(btn) {
   if(btn.classList.contains("point")) {
     if(!firstNum.includes(".")) {
       display.textContent += btn.textContent;
+      firstNum += btn.textContent;
     }
-    else if(firstNum.includes(".") && !secondNum.includes(".")) {
+    else if(firstNum.includes(".") && !secondNum.includes(".") && secondNum !== undefined) {
       display.textContent += btn.textContent;
+      secondNum += btn.textContent;
     }
   }
   
