@@ -158,6 +158,9 @@ function update(btn) {
 
     if(btn.classList.contains("ac")) {
       display.textContent = "0";
+      operator = "";
+      firstNum = "";
+      secondNum = "";
     }
     else if(btn.classList.contains("del")) {
       if(text.length > 1) {
