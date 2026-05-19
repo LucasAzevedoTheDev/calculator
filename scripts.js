@@ -73,7 +73,8 @@ let equalButton = document.querySelector(".equal");
 function update(btn) {
   const text = display.textContent;
   const operators = ["-", "+", "x", "%", "÷"];
-    
+  const hasOperator = operators.some(item => display.textContent.includes(item));
+
   // NUMBER PRESSED
   if(btn.classList.contains("number")) {
 
@@ -103,8 +104,7 @@ function update(btn) {
   if(btn.classList.contains("operator")) {
 
     if(btn.classList.contains("percent")) {
-      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-        text.includes("-") || text.includes("+")) {
+      if(hasOperator) {
         // do nothing
       }
       else {
@@ -112,8 +112,7 @@ function update(btn) {
       }      
     }
     else if(btn.classList.contains("divisor")) {
-      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-        text.includes("-") || text.includes("+")) {
+      if(hasOperator) {
         // do nothing
       }
       else {
@@ -121,8 +120,7 @@ function update(btn) {
       }
     }
     else if(btn.classList.contains("multiply")) {
-      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-        text.includes("-") || text.includes("+")) {
+      if(hasOperator) {
         // do nothing
       }
       else {
@@ -130,8 +128,7 @@ function update(btn) {
       }
     }
     else if(btn.classList.contains("minus")) {
-      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-        text.includes("-") || text.includes("+")) {
+      if(hasOperator) {
         // do nothing
       }
       else {
@@ -139,8 +136,7 @@ function update(btn) {
       }
     }
     else if(btn.classList.contains("plus")) {
-      if(text.includes("%") || text.includes("÷") || text.includes("x") || 
-        text.includes("-") || text.includes("+")) {
+      if(hasOperator) {
         // do nothing
       }
       else {
@@ -171,8 +167,6 @@ function update(btn) {
       else {
         display.textContent = 0;
       }
-
-      const hasOperator = operators.some(item => display.textContent.includes(item));
 
       if(hasOperator) {
         const parts = display.textContent.split(/[+\-x%÷]/);
