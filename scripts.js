@@ -12,7 +12,12 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
-  return a / b;
+  if(b !== 0) {
+    return a / b;
+  }  
+  else {
+    return "Error";
+  }
 }
 
 function percent(a, b) {
@@ -81,6 +86,9 @@ function update(btn) {
 
       if(display.textContent === "0") {
         display.textContent = btn.textContent;
+      }
+      else if(display.textContent === "Error") {
+        display.textContent = "0";
       }
       else {
         display.textContent += btn.textContent;
@@ -185,6 +193,12 @@ function update(btn) {
   if(btn.classList.contains("equal")) {
     let result = operate(operator, Number(firstNum), Number(secondNum));
     
+    if(result === "Error") {
+      display.textContent = "Error";
+      firstNum = undefined;
+      secondNum = undefined;
+      operator = undefined;
+    }
     if(!isNaN(result)) {
       display.textContent = result;
 
