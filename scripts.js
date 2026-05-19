@@ -74,32 +74,33 @@ function update(btn) {
   const text = display.textContent;
   const operators = ["-", "+", "x", "%", "÷"];
   const hasOperator = operators.some(item => display.textContent.includes(item));
-
+  const limit = 9;
   // NUMBER PRESSED
-  if(btn.classList.contains("number")) {
+  if (display.textContent.length < limit) {
+    if(btn.classList.contains("number")) {
 
-    if(display.textContent === "0") {
-      display.textContent = btn.textContent;
-    }
-    else {
-      display.textContent += btn.textContent;
-    }
+      if(display.textContent === "0") {
+        display.textContent = btn.textContent;
+      }
+      else {
+        display.textContent += btn.textContent;
+      }
 
-    // UPDATE firstNum AND secondNum VARIABLES 
-    if(operator === undefined && firstNum === undefined) {
-      firstNum = btn.textContent;
-    }
-    else if(operator === undefined && firstNum.length >= 1) {
-      firstNum += btn.textContent;
-    }
-    else if(secondNum === undefined){
-      secondNum = btn.textContent;
-    }
-    else if(secondNum.length >= 1) {
-      secondNum += btn.textContent;
+      // UPDATE firstNum AND secondNum VARIABLES 
+      if(operator === undefined && firstNum === undefined) {
+        firstNum = btn.textContent;
+      }
+      else if(operator === undefined && firstNum.length >= 1) {
+        firstNum += btn.textContent;
+     }
+      else if(secondNum === undefined){
+       secondNum = btn.textContent;
+     }
+      else if(secondNum.length >= 1) {
+       secondNum += btn.textContent;
+      }
     }
   }
-
   // OPERATOR PRESSED
   if(btn.classList.contains("operator")) {
 
@@ -165,6 +166,7 @@ function update(btn) {
         secondNum = undefined;
       }
     }
+
   }
 
   // POINT
@@ -213,5 +215,4 @@ button0.addEventListener("click", () => update(button0));
 pointButton.addEventListener("click", () => update(pointButton));
 equalButton.addEventListener("click", () => update(equalButton));
 
-// improve a display limit
 // make the readme
