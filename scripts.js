@@ -170,6 +170,7 @@ function update(btn) {
       else {
         display.textContent = 0;
       }
+      display.textContent.split("+")
     }
   }
 
@@ -215,3 +216,5 @@ commaButton.addEventListener("click", () => update(commaButton));
 equalButton.addEventListener("click", () => update(equalButton));
 
 // improve a display limit
+// fix comma bug
+// fix del bug
